@@ -527,7 +527,7 @@
                                 <!-- START Form Wizard -->
                                 <form class="form-horizontal form-bordered" action="#" id="wizard-validate">
                                     <!-- Wizard Container 1 -->
-                                    <div class="wizard-title"> Registration </div>
+                                    <div class="wizard-title"> Bride & Groom information</div>
                                     <div class="wizard-container">
                                         <div class="form-group">
                                             <div class="col-md-12">
@@ -536,25 +536,47 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> User ID : </label>
+                                            <label class="col-sm-2 control-label"> Wedding Date: </label>
                                             <div class="col-sm-6">
-                                                <input class="form-control" name="name" type="text" placeholder="Type your Name" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
+                                                <input class="form-control" name="wdate" type="date" placeholder="Type your wedding date" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label"> Bride's Name: </label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" name="bname" type="text" placeholder="Type bride's name" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label"> Groom's Name </label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" name="gname" type="text" placeholder="Type groom's name" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label"> About  : </label>
+                                            <div class="col-sm-6">
+                                                <textarea class="form-control" name="bgabout" row="8" col="10" placeholder="Type your detail" data-parsley-group="order" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Email Address : </label>
+                                            <label class="col-sm-2 control-label"> Bride's Image : </label>
                                             <div class="col-sm-6">
-                                                <input class="form-control" name="name" type="email" placeholder="Type your Email" data-parsley-group="order" data-parsley-required />
+                                                <input class="form-control" name="bimage" type="file" id="bimage" data-parsley-minlength="6" data-parsley-group="order" data-parsley-required />
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label"> Groom's Image : </label>
+                                            <div class="col-sm-6">
+                                                <input class="form-control" name="gimage" type="file" id="gimage" data-parsley-minlength="6" data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Password : </label>
-                                            <div class="col-sm-6">
-                                                <input class="form-control" name="name" type="password" id="passwordinput" placeholder="Type your password" data-parsley-minlength="6" data-parsley-group="order" data-parsley-required />
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Re-Password : </label>
+                                            <label class="col-sm-2 control-label">  : </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="name" type="password" placeholder="Type your password" data-parsley-equalto="#passwordinput" data-parsley-group="order" data-parsley-required />
                                             </div>
