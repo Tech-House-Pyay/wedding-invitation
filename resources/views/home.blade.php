@@ -530,12 +530,6 @@
                                     <div class="wizard-title"> Bride & Groom information</div>
                                     <div class="wizard-container">
                                         <div class="form-group">
-                                            <div class="col-md-12">
-                                                <h4 class="text-primary"> <i class="fa fa-sign-in"></i> Login Details </h4>
-                                                <p class="text-muted"> Enter Your Login Details </p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
                                             <label class="col-sm-2 control-label"> Wedding Date: </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="wdate" type="date" placeholder="Type your wedding date" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
@@ -559,7 +553,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> About  : </label>
                                             <div class="col-sm-6">
-                                                <textarea class="form-control" name="bgabout" row="8" col="10" placeholder="Type your detail" data-parsley-group="order" data-parsley-required ></textarea>
+                                                <textarea class="form-control" name="bgabout" row="8" col="10" placeholder="Type your detail"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -576,160 +570,257 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">  : </label>
+                                            <label class="col-sm-2 control-label"> Bride's Biography : </label>
                                             <div class="col-sm-6">
-                                                <input class="form-control" name="name" type="password" placeholder="Type your password" data-parsley-equalto="#passwordinput" data-parsley-group="order" data-parsley-required />
+                                                <textarea class="form-control" name="bBio" placeholder="Type Bride's biography" ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label"> Groom's Biography : </label>
+                                            <div class="col-sm-6">
+                                                <textarea class="form-control" name="gBio" placeholder="Type Groom's biography" ></textarea>
                                             </div>
                                         </div>
                                     </div>
                                     <!--/ Wizard Container 1 -->
+
                                     <!-- Wizard Container 2 -->
-                                    <div class="wizard-title"> General information </div>
+                                    <div class="wizard-title"> Love Story </div>
                                     <div class="wizard-container">
                                         <div class="form-group">
-                                            <div class="col-md-12">
-                                                <h4 class="text-primary"> <i class="'fa fa-user"></i> General information </h4>
-                                                <p class="text-muted"> General information about applicant </p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>First Name: <span class="text-danger">*</span> </label>
-                                                    <input type="text" name="First name" class="form-control" placeholder="First Name" data-parsley-group="information" data-parsley-required />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label>Last Name: <span class="text-danger">*</span> </label>
-                                                    <input type="text" name="Last name" class="form-control" placeholder="Last Name" data-parsley-group="information" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Phone #:</label>
-                                                    <input type="text" placeholder="+99-99-9999-9999" data-mask="+99-99-9999-9999" class="form-control" />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label>Date of birth:</label>
-                                                    <input type="text" placeholder="99/99/9999" data-mask="99/99/9999" class="form-control" />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
                                                 <div class="col-md-12">
-                                                    <label>Select State: </label>
-                                                    <select class="form-control" id="source">
-                                                        <option value="AK">Alaska</option>
-                                                        <option value="HI">Hawaii</option>
-                                                        <option value="CA">California</option>
-                                                        <option value="NV">Nevada</option>
-                                                        <option value="OR">Oregon</option>
-                                                        <option value="WA">Washington</option>
-                                                        <option value="AZ">Arizona</option>
-                                                        <option value="CO">Colorado</option>
-                                                        <option value="ID">Idaho</option>
-                                                        <option value="MT">Montana</option>
-                                                        <option value="NE">Nebraska</option>
-                                                        <option value="NM">New Mexico</option>
-                                                        <option value="ND">North Dakota</option>
-                                                        <option value="UT">Utah</option>
-                                                        <option value="WY">Wyoming</option>
-                                                        <option value="AL">Alabama</option>
-                                                        <option value="AR">Arkansas</option>
-                                                        <option value="IL">Illinois</option>
-                                                        <option value="IA">Iowa</option>
-                                                        <option value="KS">Kansas</option>
-                                                        <option value="KY">Kentucky</option>
-                                                        <option value="LA">Louisiana</option>
-                                                    </select>
+                                                    <h4 class="text-primary"> <i class="fa fa-user"></i> Love Story </h4>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your first meet image: <span class="text-danger">*</span> </label>
+                                                    <input type="file" name="mimage"  class="form-control" data-parsley-group="information" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your first meet date: <span class="text-danger">*</span> </label>
+                                                    <input type="date" name="mdate" class="form-control" data-parsley-group="information" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your first meet short story:</label>
+                                                    <textarea name="meetText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your first trip image:</label>
+                                                    <input type="file" name="timage" class="form-control" data-parsley-group="information" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your first trip date: <span class="text-danger">*</span> </label>
+                                                    <input type="date" name="tdate" class="form-control" data-parsley-group="information" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your first trip short story:</label>
+                                                    <textarea name="tripText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your engaged image:</label>
+                                                    <input type="file" name="engimage" class="form-control" data-parsley-group="information" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your engaged date: <span class="text-danger">*</span> </label>
+                                                    <input type="date" name="engdate" class="form-control" data-parsley-group="information" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Your engaged short story:</label>
+                                                    <textarea name="engtripText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <!--/ Wizard Container 2 -->
                                     <!-- Wizard Container 3 -->
-                                    <div class="wizard-title"> Education </div>
+                                    <div class="wizard-title">Family Detail</div>
                                     <div class="wizard-container">
                                         <div class="form-group">
                                             <div class="col-md-12">
-                                                <h4 class="text-primary"> <i class="fa fa-book"></i> Education </h4>
-                                                <p class="text-muted"> Where and when did you get your degree </p>
+                                                <h4 class="text-primary"> <i class="fa fa-book"></i>Family Detail</h4>
+                                            </div>
+                                        </div>
+                                        Bride Family star
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label> Bride Father's Image</label>
+                                                    <input type="file" name="bfimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <label>University: </label>
-                                                    <input type="text" name="University" class="form-control" placeholder="University Name" data-parsley-group="payment" data-parsley-required />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label> Country: </label>
-                                                    <input type="text" name="University-Country" class="form-control" placeholder="Choose a Country" data-parsley-group="payment" data-parsley-required />
+                                                    <label>Bride father Detail:</label>
+                                                    <textarea name="bfText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-md-6">
-                                                    <label> Degree level: </label>
-                                                    <input type="text" name="Bachelor, Master etc.." class="form-control" placeholder="Bachelor, Master etc.." data-parsley-group="payment" data-parsley-required />
+                                                    <label>Bride Mother's Image </label>
+                                                    <input type="file" name="bmimage" class="form-control" data-parsley-group="payment" data-parsley-required />
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <label> From: </label>
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
-                                                            <select name="month" class="form-control" data-parsley-group="payment" data-parsley-required>
-                                                                <option value="">Month</option>
-                                                                <option value="1">January</option>
-                                                                <option value="2">February</option>
-                                                                <option value="3">March</option>
-                                                                <option value="4">April</option>
-                                                                <option value="5">May</option>
-                                                                <option value="6">June</option>
-                                                                <option value="7">July</option>
-                                                                <option value="8">August</option>
-                                                                <option value="9">September</option>
-                                                                <option value="10">October</option>
-                                                                <option value="11">November</option>
-                                                                <option value="12">December</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <input type="text" name="University-Country" class="form-control" placeholder="Year" data-parsley-group="payment" data-parsley-required />
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Bride Mother Detail:</label>
+                                                    <textarea name="bmText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
                                                 </div>
-                                                <div class="col-md-3">
-                                                    <label> To: </label>
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
-                                                            <select name="month" class="form-control" data-parsley-group="payment" data-parsley-required>
-                                                                <option value="">Month</option>
-                                                                <option value="1">January</option>
-                                                                <option value="2">February</option>
-                                                                <option value="3">March</option>
-                                                                <option value="4">April</option>
-                                                                <option value="5">May</option>
-                                                                <option value="6">June</option>
-                                                                <option value="7">July</option>
-                                                                <option value="8">August</option>
-                                                                <option value="9">September</option>
-                                                                <option value="10">October</option>
-                                                                <option value="11">November</option>
-                                                                <option value="12">December</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <input type="text" name="University-Country" class="form-control" placeholder="Year" data-parsley-group="payment" data-parsley-required />
-                                                        </div>
-                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Bride Brother's Image </label>
+                                                    <input type="file" name="bbimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Bride Brother Detail:</label>
+                                                    <textarea name="bbText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Bride Sister's Image </label>
+                                                    <input type="file" name="bsimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Bride Sister Detail:</label>
+                                                    <textarea name="bsText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        Bride Family End
+                                        Groom Family start
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label> Groom Father's Image</label>
+                                                    <input type="file" name="gfimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom father Detail:</label>
+                                                    <textarea name="gfText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom Mother's Image </label>
+                                                    <input type="file" name="gmimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom Mother Detail:</label>
+                                                    <textarea name="gmText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom Brother's Image </label>
+                                                    <input type="file" name="gbimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom Brother Detail:</label>
+                                                    <textarea name="gbText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom Sister's Image </label>
+                                                    <input type="file" name="gsimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <div class="row">
+                                                <div class="col-md-6">
+                                                    <label>Groom Sister Detail:</label>
+                                                    <textarea name="gsText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+
+                                    Groom Family End
+
                                     <!--/ Wizard Container 3 -->
+
                                     <!-- Wizard Container 4 -->
                                     <div class="wizard-title"> Work experience </div>
                                     <div class="wizard-container">
@@ -812,12 +903,14 @@
                                     </div>
                                     <!-- Wizard Container 4 -->
                                 </form>
+
                                 <!--/ END Form Wizard -->
                             </div>
                         </section>
                     </div>
+
                 </div>
-        </div>
+            </div>
     </div>
     </div>
             <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
@@ -891,46 +984,6 @@
 <script src="{{asset('admin/plugins/masked-input/bootstrap-inputmask.min.js')}}"></script>
 <!--Bootstrap Validator [ OPTIONAL ]-->
 <script src="{{asset('admin/plugins/bootstrap-validator/bootstrapValidator.min.js')}}"></script>
-<!--Flot Chart [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/flot-charts/jquery.flot.min.js')}}"></script>
-<script src="{{asset('admin/plugins/flot-charts/jquery.flot.resize.min.js')}}"></script>
-<script src="{{asset('admin/plugins/flot-charts/jquery.flot.spline.js')}}"></script>
-<script src="{{asset('admin/plugins/moment/moment.min.js')}}"></script>
-<script src="{{asset('admin/plugins/moment-range/moment-range.js')}}"></script>
-<!--jQuery [ REQUIRED ]-->
-<script src="{{asset('admin/js/jquery-2.1.1.min.js')}}"></script>
-<!--BootstrapJS [ RECOMMENDED ]-->
-<script src="{{asset('admin/js/bootstrap.min.js')}}"></script>
-<!--Fast Click [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/fast-click/fastclick.min.js')}}"></script>
-<!--Jquery Nano Scroller js [ REQUIRED ]-->
-<script src="{{asset('admin/plugins/nanoscrollerjs/jquery.nanoscroller.min.js')}}"></script>
-<!--Metismenu js [ REQUIRED ]-->
-<script src="{{asset('admin/plugins/metismenu/metismenu.min.js')}}"></script>
-<!--Jasmine Admin [ RECOMMENDED ]-->
-<script src="{{asset('admin/js/scripts.js')}}"></script>
-<!--Switchery [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/switchery/switchery.min.js')}}"></script>
-<!--Jquery Steps [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/parsley/parsley.min.js')}}"></script>
-<!--Jquery Steps [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/jquery-steps/jquery-steps.min.js')}}"></script>
-<!--Bootstrap Select [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/bootstrap-select/bootstrap-select.min.js')}}"></script>
-<script src="{{asset('admin/plugins/flot-charts/jquery.flot.tooltip.min.js')}}"></script>
-<!--Flot Order Bars Chart [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/flot-charts/jquery.flot.categories.js')}}"></script>
-<!--Morris.js [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/morris-js/morris.min.js')}}"></script>
-<script src="{{asset('admin/plugins/morris-js/raphael-js/raphael.min.js')}}"></script>
-<!--Easy Pie Chart [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/easy-pie-chart/jquery.easypiechart.min.js')}}"></script>
-<!--Bootstrap Wizard [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/bootstrap-wizard/jquery.bootstrap.wizard.min.js')}}"></script>
-<!--Masked Input [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/masked-input/bootstrap-inputmask.min.js')}}"></script>
-<!--Bootstrap Validator [ OPTIONAL ]-->
-<script src="{{asset('admin/plugins/bootstrap-validator/bootstrapValidator.min.js')}}"></script>
 <!--Fullscreen jQuery [ OPTIONAL ]-->
 <script src="{{asset('admin/plugins/screenfull/screenfull.js')}}"></script>
 <!--Form Wizard [ SAMPLE ]-->
@@ -939,5 +992,6 @@
 <script src="{{asset('admin/js/demo/wizard.js')}}"></script>
 <!--Form Wizard [ SAMPLE ]-->
 <script src="{{asset('admin/js/demo/form-wizard.js')}}"></script>
+
 </body>
 </html>
