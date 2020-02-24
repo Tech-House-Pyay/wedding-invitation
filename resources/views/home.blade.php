@@ -542,14 +542,12 @@
                                                 <input class="form-control" name="bname" type="text" placeholder="Type bride's name" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
-
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> Groom's Name </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="gname" type="text" placeholder="Type groom's name" data-parsley-range="[4, 10]" data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
-
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> About  : </label>
                                             <div class="col-sm-6">
@@ -562,7 +560,6 @@
                                                 <input class="form-control" name="bimage" type="file" id="bimage" data-parsley-minlength="6" data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
-
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> Groom's Image : </label>
                                             <div class="col-sm-6">
@@ -593,79 +590,58 @@
                                                 </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Your first meet image: <span class="text-danger">*</span> </label>
+                                            <label class="col-sm-2 control-label">Your first meet image: <span class="text-danger">*</span> </label>
+                                            <div class="col-md-6">
                                                     <input type="file" name="mimage"  class="form-control" data-parsley-group="information" data-parsley-required />
-                                                </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label">Your first meet date: <span class="text-danger">*</span> </label>
                                                 <div class="col-md-6">
-                                                    <label>Your first meet date: <span class="text-danger">*</span> </label>
                                                     <input type="date" name="mdate" class="form-control" data-parsley-group="information" data-parsley-required />
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="control-label col-sm-2">Your first meet short story:</label>
                                                 <div class="col-md-6">
-                                                    <label>Your first meet short story:</label>
-                                                    <textarea name="meetText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
-
+                                                    <textarea name="meetText" class="form-control"  ></textarea>
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label">Your first trip image:</label>
                                                 <div class="col-md-6">
-                                                    <label>Your first trip image:</label>
                                                     <input type="file" name="timage" class="form-control" data-parsley-group="information" data-parsley-required />
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label">Your first trip date: <span class="text-danger">*</span> </label>
                                                 <div class="col-md-6">
-                                                    <label>Your first trip date: <span class="text-danger">*</span> </label>
                                                     <input type="date" name="tdate" class="form-control" data-parsley-group="information" data-parsley-required />
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label">Your first trip short story:</label>
                                                 <div class="col-md-6">
-                                                    <label>Your first trip short story:</label>
-                                                    <textarea name="tripText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
-
+                                                    <textarea name="tripText" class="form-control" ></textarea>
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label">Your engaged image:</label>
                                                 <div class="col-md-6">
-                                                    <label>Your engaged image:</label>
                                                     <input type="file" name="engimage" class="form-control" data-parsley-group="information" data-parsley-required />
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label">Your engaged date: <span class="text-danger">*</span> </label>
                                                 <div class="col-md-6">
-                                                    <label>Your engaged date: <span class="text-danger">*</span> </label>
                                                     <input type="date" name="engdate" class="form-control" data-parsley-group="information" data-parsley-required />
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                            <label class="col-sm-2 control-label">Your engaged short story:</label>
                                                 <div class="col-md-6">
-                                                    <label>Your engaged short story:</label>
-                                                    <textarea name="engtripText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
-
+                                                    <textarea name="engtripText" class="form-control"  ></textarea>
                                                 </div>
-                                            </div>
                                         </div>
                                     </div>
                                     <!--/ Wizard Container 2 -->
@@ -679,72 +655,53 @@
                                         </div>
                                         Bride Family star
                                         <div class="form-group">
-                                            <div class="row">
+                                                <label class="col-sm-2 control-label"> Bride Father's Image</label>
                                                 <div class="col-md-6">
-                                                    <label> Bride Father's Image</label>
-                                                    <input type="file" name="bfimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                    <input type="file" name="bfimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                                 </div>
-                                            </div>
                                         </div>
                                         <div class="form-group">
-                                            <div class="row">
+                                            <label class="col-sm-2 control-label">Bride father Detail:</label>
                                                 <div class="col-md-6">
-                                                    <label>Bride father Detail:</label>
-                                                    <textarea name="bfText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+                                                    <textarea name="bfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="col-sm-2 control-label">Bride Mother's Image </label>
+                                                <div class="col-md-6">
+                                                    <input type="file" name="bmimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="col-sm-2 control-label">Bride Mother Detail:</label>
+                                                <div class="col-md-6">
+                                                    <textarea name="bmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="col-sm-2 control-label">Bride Brother's Image </label>
+                                                <div class="col-md-6">
+                                                    <input type="file" name="bbimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="col-sm-2 control-label">Bride Brother Detail:</label>
+                                                <div class="col-md-6">
+                                                    <textarea name="bbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Bride Sister's Image </label>
+                                                <div class="col-md-6">
+                                                    <input type="file" name="bsimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                                </div>
+                                        </div>
+                                        <div class="form-group">
+                                                <label class="col-sm-2 control-label">Bride Sister Detail:</label>
+                                                <div class="col-md-6">\
+                                                    <textarea name="bsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
 
                                                 </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Bride Mother's Image </label>
-                                                    <input type="file" name="bmimage" class="form-control" data-parsley-group="payment" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Bride Mother Detail:</label>
-                                                    <textarea name="bmText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Bride Brother's Image </label>
-                                                    <input type="file" name="bbimage" class="form-control" data-parsley-group="payment" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Bride Brother Detail:</label>
-                                                    <textarea name="bbText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Bride Sister's Image </label>
-                                                    <input type="file" name="bsimage" class="form-control" data-parsley-group="payment" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Bride Sister Detail:</label>
-                                                    <textarea name="bsText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
-
-                                                </div>
-                                            </div>
                                         </div>
                                         Bride Family End
                                         Groom Family start
@@ -752,7 +709,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label> Groom Father's Image</label>
-                                                    <input type="file" name="gfimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                    <input type="file" name="gfimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                                 </div>
                                             </div>
                                         </div>
@@ -760,7 +717,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom father Detail:</label>
-                                                    <textarea name="gfText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+                                                    <textarea name="gfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
 
                                                 </div>
                                             </div>
@@ -769,7 +726,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom Mother's Image </label>
-                                                    <input type="file" name="gmimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                    <input type="file" name="gmimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                                 </div>
                                             </div>
                                         </div>
@@ -778,7 +735,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom Mother Detail:</label>
-                                                    <textarea name="gmText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+                                                    <textarea name="gmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
 
                                                 </div>
                                             </div>
@@ -787,7 +744,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom Brother's Image </label>
-                                                    <input type="file" name="gbimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                    <input type="file" name="gbimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                                 </div>
                                             </div>
                                         </div>
@@ -795,7 +752,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom Brother Detail:</label>
-                                                    <textarea name="gbText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+                                                    <textarea name="gbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -803,7 +760,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom Sister's Image </label>
-                                                    <input type="file" name="gsimage" class="form-control" data-parsley-group="payment" data-parsley-required />
+                                                    <input type="file" name="gsimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                                 </div>
                                             </div>
                                         </div>
@@ -811,7 +768,7 @@
                                             <div class="row">
                                                 <div class="col-md-6">
                                                     <label>Groom Sister Detail:</label>
-                                                    <textarea name="gsText" class="form-control" data-parsley-group="information" data-parsley-required ></textarea>
+                                                    <textarea name="gsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                                 </div>
                                             </div>
                                         </div>
@@ -910,6 +867,7 @@
                     </div>
 
                 </div>
+
             </div>
     </div>
     </div>
