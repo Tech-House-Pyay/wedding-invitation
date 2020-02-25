@@ -653,7 +653,7 @@
                                                 <h4 class="text-primary"> <i class="fa fa-book"></i>Family Detail</h4>
                                             </div>
                                         </div>
-                                        Bride Family star
+{{--                                        bride family start--}}
                                         <div class="form-group">
                                                 <label class="col-sm-2 control-label"> Bride Father's Image</label>
                                                 <div class="col-md-6">
@@ -661,7 +661,7 @@
                                                 </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride father Detail:</label>
+                                            <label class="col-sm-2 control-label">Bride Father's Detail:</label>
                                                 <div class="col-md-6">
                                                     <textarea name="bfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                                 </div>
@@ -673,7 +673,7 @@
                                                 </div>
                                         </div>
                                         <div class="form-group">
-                                                <label class="col-sm-2 control-label">Bride Mother Detail:</label>
+                                                <label class="col-sm-2 control-label">Bride Mother's Detail:</label>
                                                 <div class="col-md-6">
                                                     <textarea name="bmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                                 </div>
@@ -685,7 +685,7 @@
                                                 </div>
                                         </div>
                                         <div class="form-group">
-                                                <label class="col-sm-2 control-label">Bride Brother Detail:</label>
+                                                <label class="col-sm-2 control-label">Bride Brother's Detail:</label>
                                                 <div class="col-md-6">
                                                     <textarea name="bbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                                 </div>
@@ -697,177 +697,85 @@
                                                 </div>
                                         </div>
                                         <div class="form-group">
-                                                <label class="col-sm-2 control-label">Bride Sister Detail:</label>
-                                                <div class="col-md-6">\
+                                                <label class="col-sm-2 control-label">Bride Sister's Detail:</label>
+                                                <div class="col-md-6">
                                                     <textarea name="bsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                                </div>
+                                        </div>
+{{--                                        Bride Family End--}}
+{{--                                        Groom Family start--}}
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Father's Image</label>
+                                            <div class="col-md-6">
+                                                <input type="file" name="gfimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Father's Detail:</label>
+                                            <div class="col-md-6">
+                                                <textarea name="gfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Mother's Image </label>
+                                            <div class="col-md-6">
+                                                <input type="file" name="gmimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Mother's Detail:</label>
+                                            <div class="col-md-6">
+                                                <textarea name="gmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Brother's Image </label>
+                                            <div class="col-md-6">
+                                                <input type="file" name="gbimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Brother's Detail:</label>
+                                            <div class="col-md-6">
+                                                <textarea name="gbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Sister's Image </label>
+                                            <div class="col-md-6">
+                                                <input type="file" name="gsimage" class="form-control" data-parsley-group="family" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Groom Sister's Detail:</label>
+                                            <div class="col-md-6">
+                                                <textarea name="gsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
 
-                                                </div>
-                                        </div>
-                                        Bride Family End
-                                        Groom Family start
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label> Groom Father's Image</label>
-                                                    <input type="file" name="gfimage" class="form-control" data-parsley-group="family" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom father Detail:</label>
-                                                    <textarea name="gfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom Mother's Image </label>
-                                                    <input type="file" name="gmimage" class="form-control" data-parsley-group="family" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom Mother Detail:</label>
-                                                    <textarea name="gmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
-
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom Brother's Image </label>
-                                                    <input type="file" name="gbimage" class="form-control" data-parsley-group="family" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom Brother Detail:</label>
-                                                    <textarea name="gbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom Sister's Image </label>
-                                                    <input type="file" name="gsimage" class="form-control" data-parsley-group="family" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Groom Sister Detail:</label>
-                                                    <textarea name="gsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
 
-                                    Groom Family End
+{{--                                        Groom Family End--}}
 
                                     <!--/ Wizard Container 3 -->
 
                                     <!-- Wizard Container 4 -->
-                                    <div class="wizard-title"> Work experience </div>
+                                    <div class="wizard-title">Gallery</div>
                                     <div class="wizard-container">
                                         <div class="form-group">
-                                            <div class="col-md-12">
-                                                <h4 class="text-primary"> <i class="fa fa-cog"></i> Work experience </h4>
-                                                <p class="text-muted"> Let us know about your work experience </p>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label>Company: </label>
-                                                    <input type="text" name="Work experience" class="form-control" placeholder="Work experience" data-parsley-group="experience" data-parsley-required />
-                                                </div>
-                                                <div class="col-md-6">
-                                                    <label> Country: </label>
-                                                    <input type="text" name="Country" class="form-control" placeholder="Choose a Country" data-parsley-group="experience" data-parsley-required />
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <div class="row">
-                                                <div class="col-md-6">
-                                                    <label> Position: </label>
-                                                    <input type="text" name="Your Position" class="form-control" placeholder="Your Position" data-parsley-group="experience" data-parsley-required />
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <label> From: </label>
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
-                                                            <select name="month" class="form-control" data-parsley-group="experience" data-parsley-required>
-                                                                <option value="">Month</option>
-                                                                <option value="1">January</option>
-                                                                <option value="2">February</option>
-                                                                <option value="3">March</option>
-                                                                <option value="4">April</option>
-                                                                <option value="5">May</option>
-                                                                <option value="6">June</option>
-                                                                <option value="7">July</option>
-                                                                <option value="8">August</option>
-                                                                <option value="9">September</option>
-                                                                <option value="10">October</option>
-                                                                <option value="11">November</option>
-                                                                <option value="12">December</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <input type="text" name="University-Country" class="form-control" placeholder="Year" data-parsley-group="experience" data-parsley-required />
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="col-md-3">
-                                                    <label> To: </label>
-                                                    <div class="row">
-                                                        <div class="col-sm-8">
-                                                            <select name="month" class="form-control" data-parsley-group="experience" data-parsley-required>
-                                                                <option value="">Month</option>
-                                                                <option value="1">January</option>
-                                                                <option value="2">February</option>
-                                                                <option value="3">March</option>
-                                                                <option value="4">April</option>
-                                                                <option value="5">May</option>
-                                                                <option value="6">June</option>
-                                                                <option value="7">July</option>
-                                                                <option value="8">August</option>
-                                                                <option value="9">September</option>
-                                                                <option value="10">October</option>
-                                                                <option value="11">November</option>
-                                                                <option value="12">December</option>
-                                                            </select>
-                                                        </div>
-                                                        <div class="col-sm-4">
-                                                            <input type="text" name="University-Country" class="form-control" placeholder="Year" data-parsley-group="experience" data-parsley-required />
-                                                        </div>
-                                                    </div>
-                                                </div>
+                                            <label class="col-sm-2 control-label">Gallery </label>
+                                            <div class="col-md-6">
+                                                <input type="file" name="gallery[]" class="form-control" data-parsley-group="gallery" data-parsley-required  multiple />
                                             </div>
                                         </div>
                                     </div>
                                     <!-- Wizard Container 4 -->
                                 </form>
-
                                 <!--/ END Form Wizard -->
                             </div>
                         </section>
                     </div>
-
                 </div>
-
             </div>
     </div>
     </div>
