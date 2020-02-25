@@ -551,7 +551,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> About  : </label>
                                             <div class="col-sm-6">
-                                                <textarea class="form-control" name="bgabout" row="8" col="10" placeholder="Type your detail"></textarea>
+                                                <textarea class="form-control" name="bgabout" row="8" col="10" placeholder="Type your detail"  data-parsley-group="order"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
@@ -569,13 +569,13 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> Bride's Biography : </label>
                                             <div class="col-sm-6">
-                                                <textarea class="form-control" name="bBio" placeholder="Type Bride's biography" ></textarea>
+                                                <textarea class="form-control" name="bBio" placeholder="Type Bride's biography"  data-parsley-group="order"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label"> Groom's Biography : </label>
                                             <div class="col-sm-6">
-                                                <textarea class="form-control" name="gBio" placeholder="Type Groom's biography" ></textarea>
+                                                <textarea class="form-control" name="gBio" placeholder="Type Groom's biography"  data-parsley-group="order" ></textarea>
                                             </div>
                                         </div>
                                     </div>
@@ -604,7 +604,7 @@
                                         <div class="form-group">
                                                 <label class="control-label col-sm-2">Your first meet short story:</label>
                                                 <div class="col-md-6">
-                                                    <textarea name="meetText" class="form-control"  ></textarea>
+                                                    <textarea name="meetText" class="form-control" data-parsley-group="information" ></textarea>
                                                 </div>
                                         </div>
                                         <div class="form-group">
@@ -622,7 +622,7 @@
                                         <div class="form-group">
                                                 <label class="col-sm-2 control-label">Your first trip short story:</label>
                                                 <div class="col-md-6">
-                                                    <textarea name="tripText" class="form-control" ></textarea>
+                                                    <textarea name="tripText" class="form-control" data-parsley-group="information"></textarea>
                                                 </div>
                                         </div>
                                         <div class="form-group">
@@ -640,7 +640,7 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label">Your engaged short story:</label>
                                                 <div class="col-md-6">
-                                                    <textarea name="engtripText" class="form-control"  ></textarea>
+                                                    <textarea name="engtripText" class="form-control" data-parsley-group="information" ></textarea>
                                                 </div>
                                         </div>
                                     </div>
@@ -765,11 +765,49 @@
                                         <div class="form-group">
                                             <label class="col-sm-2 control-label">Gallery </label>
                                             <div class="col-md-6">
-                                                <input type="file" name="gallery[]" class="form-control" data-parsley-group="gallery" data-parsley-required  multiple />
+                                                <input type="file" name="gallery[]" class="form-control" data-parsley-group="gallery"  multiple />
                                             </div>
                                         </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Wedding Time</label>
+                                            <div class="col-sm-6">
+                                                <input type="time" name="wtime" class="form-control" data-parsley-group="party" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Wedding Place</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="wplace" class="form-control" data-parsley-group="party" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Wedding Party Time</label>
+                                            <div class="col-sm-6">
+                                                <input type="time" name="wpartytime" class="form-control" data-parsley-group="party" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Wedding Party Place</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="wpartyplace" class="form-control" data-parsley-group="party" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Dinner Time</label>
+                                            <div class="col-sm-6">
+                                                <input type="time" name="dtime" class="form-control" data-parsley-group="party" data-parsley-required />
+                                            </div>
+                                        </div>
+                                        <div class="form-group">
+                                            <label class="col-sm-2 control-label">Dinner Place</label>
+                                            <div class="col-sm-6">
+                                                <input type="text" name="dplace" class="form-control" data-parsley-group="party" data-parsley-required />
+                                            </div>
+                                        </div>
+
                                     </div>
                                     <!-- Wizard Container 4 -->
+
                                 </form>
                                 <!--/ END Form Wizard -->
                             </div>
