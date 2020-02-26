@@ -13,7 +13,8 @@
         bodyTag: ".wizard-container",
         onFinished: function () {
             // do anything here ;)
-            alert("finished!");
+            // alert("finished!");
+            $('frm').submit();
         }
     });
 
@@ -80,7 +81,8 @@
         onFinished: function () {
             // yayyy! all validation is pass.. now we can send data to server
             // or display message ;)
-            alert("submitted!");
+            // alert("submitted!");
+            $('form').submit();
         }
     });
 });

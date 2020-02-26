@@ -72,7 +72,6 @@
                                         <!-- Dropdown list-->
                                         <li>
                                             <a href="#" class="media">
-
                                                 <div class="media-left">
                                                     <img src="{{asset('admin/img/av2.png')}}" alt="Profile Picture" class="img-circle img-sm">
                                                 </div>
