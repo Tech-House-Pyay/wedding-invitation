@@ -39,7 +39,7 @@ pjax = new Y.Pjax({
     routes        : [
         // -- / ----------------------------------------------------------------
         {
-            path     : '/(index.html)?',
+            path     : '/(index1.html)?',
             callbacks: defaultRoute
         },
 
