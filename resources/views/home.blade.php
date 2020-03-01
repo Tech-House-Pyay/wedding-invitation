@@ -41,7 +41,7 @@
             <!--Brand logo & name-->
             <!--================================-->
             <div class="navbar-header">
-                <a href="index.html" class="navbar-brand">
+                <a href="index1.html" class="navbar-brand">
                     <i class="fa fa-cube brand-icon"></i>
                     <div class="brand-title">
                         <span class="brand-text">SmartAdmin</span>
@@ -284,7 +284,7 @@
                         <li class="dropdown">
                             <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Home <b class="caret"></b></a>
                             <ul class="dropdown-menu" role="menu">
-                                <li><a href="index.html">Dashboard V1 </a></li>
+                                <li><a href="index1.html">Dashboard V1 </a></li>
                                 <li><a href="dashboard-v2.html">Dashboard V2 </a></li>
                             </ul>
                             <!-- end dropdown-menu -->

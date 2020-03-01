@@ -15,7 +15,7 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('home', function () {
-    return view('home');
-});
-Route::resource('wedding','WeddingController');
+//Route::get('wedding/index', function () {
+//    return view('wedding.index');
+//});
+Route::resource('weddings','WeddingController');
