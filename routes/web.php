@@ -19,3 +19,7 @@ Route::get('/', function () {
 //    return view('wedding.index');
 //});
 Route::resource('weddings','WeddingController');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');

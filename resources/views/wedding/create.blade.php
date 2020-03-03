@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> SmartAdmin - Responsive admin template..</title>
+    <title>Admin Place</title>
     <link rel="shortcut icon" href="admin/img/favicon.ico">
     <!--STYLESHEET-->
     <!--=================================================-->
@@ -44,7 +44,7 @@
                 <a href="index.html" class="navbar-brand">
                     <i class="fa fa-cube brand-icon"></i>
                     <div class="brand-title">
-                        <span class="brand-text">SmartAdmin</span>
+                        <span class="brand-text">Admin</span>
                     </div>
                 </a>
             </div>
@@ -244,8 +244,8 @@
                     <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
                     <li id="dropdown-user" class="dropdown">
                         <a href="#" data-toggle="dropdown" class="dropdown-toggle text-right">
-                            <span class="pull-right"> <img class="img-circle img-user media-object" src="{{asset('admin/img/av1.png')}}" alt="Profile Picture"> </span>
-                            <div class="username hidden-xs">John Doe</div>
+                            <span class="pull-right"> </span>
+                            <div class="username hidden-xs">Admin</div>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right with-arrow">
                             <!-- User dropdown menu -->
@@ -270,165 +270,6 @@
                 </ul>
             </div>
             <!--================================-->
-            <!--End Navbar Dropdown-->
-            <nav class="navbar navbar-default megamenu">
-                <div class="navbar-header">
-                    <button type="button" data-toggle="collapse" data-target="#defaultmenu" class="navbar-toggle">
-                        <span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                </div>
-                <!-- end navbar-header -->
-                <div id="defaultmenu" class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav">
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Home <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="index.html">Dashboard V1 </a></li>
-                                <li><a href="dashboard-v2.html">Dashboard V2 </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Ui Elements <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="ui-animation.html"> CSS3 Animation </a></li>
-                                <li><a href="ui-panel.html">Panel </a></li>
-                                <li><a href="ui-xeditable.html"> X-Editable </a></li>
-                                <li><a href="ui-button.html">Buttons </a></li>
-                                <li><a href="ui-fontawesome.html"> FontAwesome </a></li>
-                                <li><a href="ui-icons.html">Icons</a></li>
-                                <li><a href="ui-components.html"> Components </a></li>
-                                <li><a href="ui-timeline.html">Timeline </a></li>
-                                <li><a href="ui-nested-lists.html"> Nested Lists </a></li>
-                                <li><a href="ui-grids.html"> Grids</a></li>
-                                <li><a href="ui-tab.html"> Tab </a></li>
-                                <li><a href="ui-accordions.html">Accordions </a></li>
-                                <li><a href="ui-dragdrop.html"> Draggable Panel</a></li>
-                                <li><a href="ui-typography.html"> Typography </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Pages <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="pages-faq.html"> FAQ </a></li>
-                                <li><a href="pages-gallery.html"> Gallery </a></li>
-                                <li><a href="pages-directory.html"> User Directory </a></li>
-                                <li><a href="pages-profile.html"> User Profile</a></li>
-                                <li><a href="pages-invoice.html"> Invoice </a></li>
-                                <li><a href="pages-login.html">Login</a></li>
-                                <li><a href="pages-register.html"> Register </a></li>
-                                <li><a href="pages-password-reminder.html"> Password Reminder </a></li>
-                                <li><a href="pages-lock-screen.html"> Lock Screen </a></li>
-                                <li><a href="pages-404.html"> 404 Error </a></li>
-                                <li><a href="pages-500.html"> 505 Error </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Tables <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="table-static.html"> Static Table </a></li>
-                                <li><a href="table-datatable.html"> Data table </a></li>
-                                <li><a href="table-footable.html"> Foo Table </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Forms <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="forms-layout.html"> Form Layout </a></li>
-                                <li><a href="forms-switchery.html"> Form Switchery </a></li>
-                                <li><a href="forms-components.html"> Form Components </a></li>
-                                <li><a href="forms-validation.html"> Form Validation </a></li>
-                                <li><a href="forms-wizard.html"> Form Wizard </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Charts <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="charts-flot.html"> Flot Chart </a></li>
-                                <li><a href="charts-morris.html"> Morris Chart </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li>
-                            <a href="calendar.html"> Calendar </a>
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li>
-                            <a href="ui-widgets.html"> Widgets </a>
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Mail <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="mail-inbox.html"> Inbox </a></li>
-                                <li><a href="mail-compose.html"> Compose Mail </a></li>
-                                <li><a href="mail-mailview.html"> View Mail </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Maps <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="maps-gmap.html"> Google Map </a></li>
-                                <li><a href="maps-vectormap.html"> Vector Map </a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                        <!-- standard drop down -->
-                        <li class="dropdown">
-                            <a href="#" data-toggle="dropdown" class="dropdown-toggle"> Menu Levels <b class="caret"></b></a>
-                            <ul class="dropdown-menu" role="menu">
-                                <li><a href="#">Second Level</a></li>
-                                <li><a href="#">Second Level</a></li>
-                                <li class="dropdown-submenu">
-                                    <a href="#">Second Level</a>
-                                    <ul class="dropdown-menu">
-                                        <li class="dropdown-submenu">
-                                            <a href="#">Third Level</a>
-                                            <ul class="dropdown-menu">
-                                                <li><a href="#">Fourth Level</a></li>
-                                                <li><a href="#">Fourth Level</a></li>
-                                            </ul>
-                                        </li>
-                                        <!-- end dropdown-submenu -->
-                                        <li><a href="#">Third Level</a></li>
-                                        <li><a href="#">Third level</a></li>
-                                    </ul>
-                                    <!-- end dropdown-menu -->
-                                </li>
-                                <li><a href="#">Creattica</a></li>
-                            </ul>
-                            <!-- end dropdown-menu -->
-                        </li>
-                        <!-- end standard drop down -->
-                    </ul>
-                    <!-- end nav navbar-nav -->
-                </div>
-                <!-- end #navbar-collapse-1 -->
-            </nav>
-            <!-- end navbar navbar-default megamenu -->
         </div>
     </header>
     <!--===================================================-->
@@ -546,13 +387,13 @@
                                         </div>
 
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Bride's Name: </label>
+                                            <label class="col-sm-2 control-label"> Groom's Name: </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="bname" type="text" placeholder="Type bride's name" data-parsley-range="[4, 20]" data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Groom's Name </label>
+                                            <label class="col-sm-2 control-label"> bride's Name </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="gname" type="text" placeholder="Type groom's name" data-parsley-range="[4, 20]" data-parsley-group="order" data-parsley-required />
                                             </div>
@@ -564,25 +405,25 @@
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Bride's Image : </label>
+                                            <label class="col-sm-2 control-label"> Groom's Image : </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="bimage" type="file" id="bimage"  data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Groom's Image : </label>
+                                            <label class="col-sm-2 control-label"> Bride's Image : </label>
                                             <div class="col-sm-6">
                                                 <input class="form-control" name="gimage" type="file" id="gimage" data-parsley-minlength="6" data-parsley-group="order" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Bride's Biography : </label>
+                                            <label class="col-sm-2 control-label"> Groom's Biography : </label>
                                             <div class="col-sm-6">
                                                 <textarea class="form-control" name="bBio" placeholder="Type Bride's biography"  data-parsley-group="order"></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Groom's Biography : </label>
+                                            <label class="col-sm-2 control-label"> Bride's Biography : </label>
                                             <div class="col-sm-6">
                                                 <textarea class="form-control" name="gBio" placeholder="Type Groom's biography"  data-parsley-group="order" ></textarea>
                                             </div>
@@ -664,49 +505,49 @@
                                         </div>
                                         {{--                                        bride family start--}}
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label"> Bride Father's Image</label>
+                                            <label class="col-sm-2 control-label"> Groom Father's Image</label>
                                             <div class="col-md-6">
                                                 <input type="file" name="bfimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Father's Detail:</label>
+                                            <label class="col-sm-2 control-label">Groom Father's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="bfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Mother's Image </label>
+                                            <label class="col-sm-2 control-label">Groom Mother's Image </label>
                                             <div class="col-md-6">
                                                 <input type="file" name="bmimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Mother's Detail:</label>
+                                            <label class="col-sm-2 control-label">Groom Mother's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="bmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Brother's Image </label>
+                                            <label class="col-sm-2 control-label">Groom Brother's Image </label>
                                             <div class="col-md-6">
                                                 <input type="file" name="bbimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Brother's Detail:</label>
+                                            <label class="col-sm-2 control-label">Groom Brother's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="bbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Sister's Image </label>
+                                            <label class="col-sm-2 control-label">Groom Sister's Image </label>
                                             <div class="col-md-6">
                                                 <input type="file" name="bsimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Bride Sister's Detail:</label>
+                                            <label class="col-sm-2 control-label">Groom Sister's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="bsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
@@ -714,49 +555,49 @@
                                         {{--                                        Bride Family End--}}
                                         {{--                                        Groom Family start--}}
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Father's Image</label>
+                                            <label class="col-sm-2 control-label">Bride Father's Image</label>
                                             <div class="col-md-6">
                                                 <input type="file" name="gfimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Father's Detail:</label>
+                                            <label class="col-sm-2 control-label">Bride Father's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="gfText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Mother's Image </label>
+                                            <label class="col-sm-2 control-label">Bride Mother's Image </label>
                                             <div class="col-md-6">
                                                 <input type="file" name="gmimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Mother's Detail:</label>
+                                            <label class="col-sm-2 control-label">Bride Mother's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="gmText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Brother's Image </label>
+                                            <label class="col-sm-2 control-label">Bride Brother's Image </label>
                                             <div class="col-md-6">
                                                 <input type="file" name="gbimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Brother's Detail:</label>
+                                            <label class="col-sm-2 control-label">Bride Brother's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="gbText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Sister's Image </label>
+                                            <label class="col-sm-2 control-label">Bride Sister's Image </label>
                                             <div class="col-md-6">
                                                 <input type="file" name="gsimage" class="form-control" data-parsley-group="family" data-parsley-required />
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <label class="col-sm-2 control-label">Groom Sister's Detail:</label>
+                                            <label class="col-sm-2 control-label">Bride Sister's Detail:</label>
                                             <div class="col-md-6">
                                                 <textarea name="gsText" class="form-control" data-parsley-group="family" data-parsley-required ></textarea>
 

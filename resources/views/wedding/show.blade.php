@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Couple - HTML5 Boostrap Wedding Event template</title>
+    <title>Wedding Invitation</title>
     <!-- Favicons -->
     <link rel="shortcut icon" href="{{asset('img/fav.png')}}">
     <!-- Custom Fonts -->
@@ -39,7 +39,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="index1.html">Couple</a>
+            <a class="navbar-brand" href="index1.html">Wedding Invitation</a>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="Main_Menu navbar-example collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -132,16 +132,14 @@
                     <div class="br_grm">
                         <div class="brd_grm_wrap">
                             <div class="brd_grm_img">
-{{--                                <img src="{{ asset('storage/'.$wedding->bimage) }}" alt="" />--}}
-                                <img src="{{ asset('img/placehold/bimage.jpg') }}" alt="" />
+
+                                <img src="{{ asset('storage/'.$wedding->bimage) }}" alt="" />
                                 <div class="brgm_overlay"></div>
                             </div>
                             <div class="heart_frame">
                                 <img class="def_frm" src="{{ asset('img/two/love_frm.png') }}" alt="" />
                                 <img class="hov_frm" src="{{ asset('img/two/love_frm_hover.png') }}" alt="" />
-                                <a class="br_gr_zoom"  href="#myModal1" data-toggle="modal">
-                                    <img src="{{ asset('img/zoom.png') }}" alt="" />
-                                </a>
+
                             </div>
                         </div>
                         <h3>{{$wedding->bname}}</h3>
@@ -157,15 +155,13 @@
                     <div class="br_grm">
                         <div class="brd_grm_wrap">
                             <div class="brd_grm_img">
-                                <img src="{{ asset('storage/'.$wedding->gimage)}}" alt="" />
+                                <img src="{{ asset('storage/'.$wedding->gimage) }}" alt="" />
                                 <div class="brgm_overlay"></div>
                             </div>
                             <div class="heart_frame">
                                 <img class="def_frm" src="{{ asset('img/two/love_frm.png') }}" alt="" />
                                 <img class="hov_frm" src="{{ asset('img/two/love_frm_hover.png') }}" alt="" />
-                                <a class="br_gr_zoom"  href="#myModal2" data-toggle="modal">
-                                    <img src="{{ asset('img/zoom.png') }}" alt="" />
-                                </a>
+
                             </div>
                         </div>
                         <h3>{{$wedding->gname}}</h3>
@@ -184,22 +180,12 @@
 <!--Bride Groom Section End-->
 
 <!--Parallex Section One-->
-<div class="img-holder" data-image="{{ asset('img/placehold/parallex1.png') }}" data-width="1400" data-height="1122"></div>
+<div class="img-holder" data-image="{{ asset('img/placehold/bg4.jpg') }}" data-width="1400" data-height="1122"></div>
 <!--Parallex Section One End-->
 
 <!--Love story section-->
 <section id="love_story" class="wedding-sec love_story_sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12 text-center">
-                <div class="section-head">
-                    <h2 class="section-heading">Love Story</h2>
-                    <div class="bottom-dash"></div>
-                    <p class="section-subheading text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. </p>
-                </div>
-            </div>
-        </div>
-    </div>
+
     <div class="love_story_wrapper">
         <div class="container">
             <div id="love_story_tab" class="love_story_tab">
@@ -224,46 +210,17 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="love_story_details">
-                                        <p class="posting_date">December 19,2012</p>
+                                        <p class="posting_date">{{$wedding->mdate}}</p>
                                         <h3><a href="#">Day we meet each other</a></h3>
                                         <p class="post_text">
                                             {{ $wedding->meetText }}
                                         </p>
-                                        <a href="#" class="read_more">Read More <img class="arrow" src="{{ asset('img/arrow.png') }}" alt="" /><img class="arrow-hov" src="{{ asset('img/arrow-hov.png') }}" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="story2">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="love_story_img">
-                                        <img src="{{ asset('storage/'.$wedding->mimage) }}" alt="" />
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
                         <div role="tabpanel" class="tab-pane fade" id="story3">
-                            <div class="row">
-                                <div class="col-md-6">
-                                    <div class="love_story_img">
-                                        <img src="{{ asset('img/placehold/lovestory2.png') }}" alt="" />
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="love_story_details">
-                                        <p class="posting_date">july 19,2013</p>
-                                        <h3><a href="#">our holiday trip</a></h3>
-                                        <p class="post_text">
-                                            {{ $wedding->tripText }}
-                                        </p>
-                                        <a href="#" class="read_more">Rea More <img class="arrow" src="{{ asset('img/arrow.png') }}" alt="" /><img class="arrow-hov" src="{{ asset('img/arrow-hov.png') }}" alt="" /></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div role="tabpanel" class="tab-pane fade" id="story4">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="love_story_img">
@@ -272,26 +229,35 @@
                                 </div>
                                 <div class="col-md-6">
                                     <div class="love_story_details">
-                                        <p class="posting_date">january 19,2013</p>
-                                        <h3><a href="#">get engaged</a></h3>
+                                        <p class="posting_date">{{$wedding->tdate}}</p>
+                                        <h3><a href="#">our holiday trip</a></h3>
                                         <p class="post_text">
-                                           {{$wedding->engtripText}}
+                                            {{ $wedding->tripText }}
                                         </p>
-                                        <a href="#" class="read_more">Read More <img class="arrow" src="{{ asset('img/arrow.png') }}" alt="" /><img class="arrow-hov" src="{{ asset('img/arrow-hov.png') }}" alt="" /></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div role="tabpanel" class="tab-pane fade" id="story5">
+                        <div role="tabpanel" class="tab-pane fade" id="story4">
                             <div class="row">
                                 <div class="col-md-6">
                                     <div class="love_story_img">
                                         <img src="{{ asset('storage/'.$wedding->engimage) }}" alt="" />
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="love_story_details">
+                                        <p class="posting_date">{{$wedding->engdate}}</p>
+                                        <h3><a href="#">get engaged</a></h3>
+                                        <p class="post_text">
+                                            {{$wedding->engtripText}}
+                                        </p>
 
+                                    </div>
+                                </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -301,7 +267,7 @@
 <!--Love story section End-->
 
 <!--Parallex section 2-->
-<div class="img-holder" data-image="{{ asset('img/placehold/parallex2.png') }}" data-width="2616" data-height="1553"></div>
+<div class="img-holder" data-image="{{ asset('img/placehold/bg6.jpg') }}" data-width="2616" data-height="1553"></div>
 <!--Parallex section 2 End-->
 
 <!--Our Family section-->
@@ -449,94 +415,19 @@
     </div>
     <div class="container-fluid">
         <div id="photo-container" class="row photo-container">
-            <div class="mix wday Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-sml.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
+            @foreach($wedding->gallery as $gallery)
+                <div class="mix wday Graphics">
+                    <img src="{{ asset('uploads/'.$gallery)}}" alt="" />
+                    <div class="overlay">
+                        <div class="overlay_text">
+                            <div class="inner-extra">
+                                <a href="{{ asset('uploads/'.$gallery)}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="mix trip Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-sml.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mix mix_big sydney Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-big.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mix wday Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-sml.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mix wday Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-sml.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mix mix_big trip Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-big.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mix sydney Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-sml.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="mix wday Graphics">
-                <img src="{{ asset('img/placehold/gallery-img-sml.png')}}" alt="" />
-                <div class="overlay">
-                    <div class="overlay_text">
-                        <div class="inner-extra">
-                            <a href="{{ asset('img/placehold/zoom.png')}}" data-gal="prettyPhoto[pp_gal]"><img src="{{ asset('img/zoom.png')}}" alt="" /></a>
-                            <p>Some content goes here</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 </section>
@@ -551,7 +442,7 @@
                 <div class="section-head">
                     <h2 class="section-heading">Events & Parties </h2>
                     <div class="bottom-dash"></div>
-                    <p class="section-subheading text-muted">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit voluptatem. </p>
+
                 </div><!--.section-head-->
             </div><!--.col-lg-12-->
         </div><!--.row-->
@@ -565,16 +456,13 @@
                             <div class="card front evnt_prt evnt_prt_1">
                                 <h2>Wedding Ceremony</h2>
                                 <img src="{{ asset('img/event_icon1.png')}}" alt="" />
-                                <p>LONDON.UK</p>
-                                <button class="btn btn-primary btn_evnt">4:30PM</button>
+                                <p>{{$wedding->wplace}}</p>
+                                <button class="btn btn-primary btn_evnt">{{$wedding->wtime}}</button>
                             </div><!--.card .front .evnt_prt .evnt_prt_1-->
                             <div class="card back evnt_prt_back evnt_prt_back_1">
                                 <h2>Wedding Ceremony</h2>
                                 <div class="evnt_addres">
-                                    <p>Hotel Radisson</p>
-                                    <p>4th Street,DOHS MIRPUR</p>
-                                    <p>Saturday, 20 july 2015</p>
-                                    <p>4:30PM - 6:15PM</p>
+                                    <p>{{$wedding->wplace}}</p>
                                 </div>
                             </div><!--.card .back .evnt_prt_back .evnt_prt_back_1-->
                         </div><!-- .cards-->
@@ -588,16 +476,13 @@
                             <div class="card front evnt_prt evnt_prt_2">
                                 <h2>Wedding Party</h2>
                                 <img src="{{ asset('img/event_icon2.png')}}" alt="" />
-                                <p>LONDON.UK</p>
-                                <button class="btn btn-primary btn_evnt">6:30PM</button>
+                                <p>{{$wedding->wpartyplace}}r</p>
+                                <button class="btn btn-primary btn_evnt">{{$wedding->wpartytime}}</button>
                             </div><!--.card .front .evnt_prt .evnt_prt_2-->
                             <div class="card back evnt_prt_back evnt_prt_back_2">
                                 <h2>Wedding Party</h2>
                                 <div class="evnt_addres">
-                                    <p>Hotel Radisson</p>
-                                    <p>4th Street,DOHS MIRPUR</p>
-                                    <p>Saturday, 20 july 2015</p>
-                                    <p>4:30PM - 6:15PM</p>
+                                    <p>{{$wedding->wpartyplace}}</p>
                                 </div>
                             </div><!--.card .back .evnt_prt_back .evnt_prt_back_2-->
                         </div><!-- .cards-->
@@ -611,16 +496,13 @@
                             <div class="card front evnt_prt evnt_prt_3">
                                 <h2>Dinner</h2>
                                 <img src="{{ asset('img/event_icon3.png')}}" alt="" />
-                                <p>LONDON.UK</p>
-                                <button class="btn btn-primary btn_evnt">7:45PM</button>
+                                <p>{{$wedding->dplace}}</p>
+                                <button class="btn btn-primary btn_evnt">{{$wedding->dtime}}</button>
                             </div><!--.card .front .evnt_prt .evnt_prt_3-->
                             <div class="card back evnt_prt_back evnt_prt_back_3">
                                 <h2>Dinner</h2>
                                 <div class="evnt_addres">
-                                    <p>Hotel Radisson</p>
-                                    <p>4th Street,DOHS MIRPUR</p>
-                                    <p>Saturday, 20 july 2015</p>
-                                    <p>4:30PM - 6:15PM</p>
+                                    <p>{{$wedding->dplace}}</p>
                                 </div>
                             </div><!--.card .back .evnt_prt_back .evnt_prt_back_3-->
                         </div><!-- .cards-->
@@ -633,7 +515,7 @@
 <!--Events ans Parties section End-->
 
 <!--Parallex section 3-->
-<div class="img-holder" data-image="{{ asset('img/placehold/parallex3.png')}}" data-width="3888" data-height="2592"></div>
+<div class="img-holder" data-image="{{ asset('img/placehold/bg3.jpg')}}" data-width="3888" data-height="2592"></div>
 <!--parallex section 3 End-->
 <section id="video-background" class="video_background_sec">
     <!--Hidden header for w3c validation only-->
@@ -641,6 +523,8 @@
     <!--Hidden header for w3c validation only-->
     <div class="video-bg-self"></div>
 </section>
+
+
 <!--Phone mail addres section-->
 <section class="footer_top_sec footer_top_sec_2">
     <!--Hidden header for w3c validation only-->
@@ -649,10 +533,10 @@
     <div class="container">
         <div class="row">
             <div class="col-md-4">
-                <p class="phone"><img src="{{ asset('img/phone-icon.png')}}" alt="" />239-842-3433</p>
+                <p class="phone"><img src="{{ asset('img/phone-icon.png')}}" alt="" />261-975-337</p>
             </div>
             <div class="col-md-4">
-                <p class="mail"><img src="{{ asset('img/mail-icon.png')}}" alt="" />name@domain.com</p>
+                <p class="mail"><img src="{{ asset('img/mail-icon.png')}}" alt="" />cupyay2017@gmail.com</p>
             </div>
             <div class="col-md-4">
                 <p class="address"><img src="{{ asset('img/location-icon.png')}}" alt="" />Home Address,City Name Country</p>
