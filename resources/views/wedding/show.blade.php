@@ -80,6 +80,7 @@
                                 <div class="slider-text">
                                     <h2 class="slider-head">{{$wedding->bname}} & {{$wedding->gname}}</h2>
                                     <p class="">Are getting married on {{$wedding->wdate}} ,{{$wedding->wplace}} </p>
+                                    <input type="hidden" name="" id="webdate" value="{{$wedding->wdate}}">
                                 </div>
                             </div>
                         </li>
@@ -104,7 +105,9 @@
                     </ul>
                 </div>
                 <div class="countdown-wrap">
-                    <div class="countdown"></div>
+                    <div class="countdown">
+
+                    </div>
                 </div>
 
             </section><!--/#main-slider-->
@@ -539,7 +542,7 @@
                 <p class="mail"><img src="{{ asset('img/mail-icon.png')}}" alt="" />cupyay2017@gmail.com</p>
             </div>
             <div class="col-md-4">
-                <p class="address"><img src="{{ asset('img/location-icon.png')}}" alt="" />Home Address,City Name Country</p>
+                <p class="address"><img src="{{ asset('img/location-icon.png')}}" alt="" />UCS(Pyay),Pyay,Myanmar</p>
             </div>
         </div>
     </div>

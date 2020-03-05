@@ -8,30 +8,30 @@ jQuery(window).load(function() {
 jQuery(document).ready(function($){
     'use strict';
 	$('.img-holder').imageScroll();
-	
-	// Scrollbar 
+
+	// Scrollbar
 	if (window.addEventListener) window.addEventListener('DOMMouseScroll', wheel, false);
 	window.onmousewheel = document.onmousewheel = wheel;
-	 
+
 	function wheel(event) {
 		var delta = 0;
 		if (event.wheelDelta) delta = event.wheelDelta / 120;
 		else if (event.detail) delta = -event.detail / 3;
-	 
+
 		handle(delta);
 		if (event.preventDefault) event.preventDefault();
 		event.returnValue = false;
 	}
-	 
+
 	function handle(delta) {
 		var time = 800; // delay time
-		var distance = 350; // delta point 
-		// Dom where it will apply 
+		var distance = 350; // delta point
+		// Dom where it will apply
 		$('html, body').stop().animate({
 			scrollTop: $(window).scrollTop() - (distance * delta)
 		}, time );
 	}
-	
+
 	// Contact Form
 	$('#forms').submit(function(e){
 		// Stop the form actually posting
@@ -130,7 +130,7 @@ jQuery(document).ready(function($) {
 		var infowindow = new google.maps.InfoWindow({
 		 content: content
 		});
-		
+
 		var marker = new google.maps.Marker({
 			position: myLatlng,
 			map: map,
@@ -157,8 +157,8 @@ jQuery(document).ready(function($) {
 		  itemsTablet :	[768,1],
 		  itemsMobile :	[479,1]
 	  });
-	 
-});	
+
+});
 /*  Family member carosel 2 */
 jQuery(document).ready(function($) {
    "use strict";
@@ -170,8 +170,8 @@ jQuery(document).ready(function($) {
 	  itemsTablet :	[768,1],
 	  itemsMobile :	[479,1]
   });
- 
-});	
+
+});
 
 /*  Family member carosel 3 */
 jQuery(document).ready(function($) {
@@ -184,8 +184,8 @@ jQuery(document).ready(function($) {
 		  itemsTablet :	[768,1],
 		  itemsMobile :	[479,1]
 	  });
-	 
-});	
+
+});
 
 /* Love story carosel */
 jQuery(document).ready(function($) {
@@ -194,13 +194,13 @@ jQuery(document).ready(function($) {
 	  autoPlay: false, //Set AutoPlay to 3 seconds
 	  singleItem: true
   });
- 
-});	
+
+});
 //Mixit up
 jQuery(document).ready(function($){
 		"use strict";
 		$('.photo-container').mixItUp();
-});	
+});
 // Back to Top
 jQuery(document).ready(function($){
 	"use strict";
@@ -210,7 +210,7 @@ jQuery(document).ready(function($){
 		} else {
 			$('#toTop').fadeOut();
 		}
-	}); 
+	});
 	$('#toTop').click(function(){
 		$("html, body").animate({ scrollTop: 0 }, 600);
 		return false;
@@ -224,8 +224,9 @@ jQuery(document).ready(function($){
 	'use strict';
 	var weddingDate = new Date();
 	var weddingDate = new Date(weddingDate.getFullYear() + 1, 1 - 1, 1);
+    console.log( new Date($('#webdate').val()));
 	$(".countdown").countdown({
-		until: new Date(2016, 12-9, 18),
+		until: new Date($('#webdate').val()),
 		padZeroes: true,
 		format: 'ODHMS'
 	});
@@ -247,52 +248,52 @@ jQuery(window).load( function() {
 	};
 });
 
-// Flex Slider		
+// Flex Slider
 jQuery(document).ready(function($){
 	'use strict';
 	if(jQuery('.flexslider').length) {
 	 $('.flexslider').flexslider({
-		animation: "slide", 
+		animation: "slide",
 		controlNav: false,
 		slideshow: true,
                //Boolean: Create navigation for paging control of each clide? Note: Leave true for manualControls usage
-		easing: "linear",           
+		easing: "linear",
 		directionNav: true,             //Boolean: Create navigation for previous/next navigation? (true/false)
 		prevText: '<i class="fa fa-angle-left"></i>',           //String: Set the text for the "previous" directionNav item
 		nextText:  '<i class="fa fa-angle-right"></i>'              //String: Set the text for the "next" directionNav item
- 	    
+
 	});
 	};
 });
-	  
+
 //Tab js
 jQuery(document).ready(function($) {
 	"use strict";
-	$('.family_tab_4 ul li:first-child a').on('shown.bs.tab', function (e) { 
+	$('.family_tab_4 ul li:first-child a').on('shown.bs.tab', function (e) {
 		var target = $(this).attr('href');
 
-		$(target).css('left','-'+$(window).width()+'px');   
+		$(target).css('left','-'+$(window).width()+'px');
 		var left = $(target).offset().left;
 		$(target).css({left:left}).animate({"left":"0px"}, "slow");
 	});
-	$('.bmaid_sec ul li a').on('shown.bs.tab', function (e) { 
+	$('.bmaid_sec ul li a').on('shown.bs.tab', function (e) {
 		var target = $(this).attr('href');
 
-		$(target).css('left','-'+$(window).width()+'px');   
+		$(target).css('left','-'+$(window).width()+'px');
 		var left = $(target).offset().left;
 		$(target).css({left:left}).animate({"left":"0px"}, 800);
 	});
-	$('.gmen_sec ul li a').on('shown.bs.tab', function (e) { 
+	$('.gmen_sec ul li a').on('shown.bs.tab', function (e) {
 		var target = $(this).attr('href');
 
-		$(target).css('right','-'+$(window).width()+'px');   
+		$(target).css('right','-'+$(window).width()+'px');
 		var right = $(target).offset().right;
 		$(target).css({right:right}).animate({"right":"0px"}, 800);
 	});
-	$('.family_tab_4 ul li:last-child a').on('shown.bs.tab', function (e) { 
+	$('.family_tab_4 ul li:last-child a').on('shown.bs.tab', function (e) {
 		var target = $(this).attr('href');
 
-		$(target).css('right','-'+$(window).width()+'px');   
+		$(target).css('right','-'+$(window).width()+'px');
 		var right = $(target).offset().right;
 		$(target).css({right:right}).animate({"right":"0px"}, "slow");
 	});
@@ -304,7 +305,7 @@ jQuery(document).ready(function($){
 	"use strict";
 	$('.video-bg-self').prepend('<div class="video-background"></div>');
 	$('.video-background').videobackground({
-		videoSource: [['img/video/wed-vid.mp4', 'video/mp4']],
+		videoSource: [['/img/video/weddingI.mp4', 'video/mp4']],
 		controlPosition: '.video-bg-self',
 		loop: true,
 		// poster: 'img/vidbg.jpg',
@@ -334,7 +335,7 @@ jQuery(document).ready(function($){
 jQuery(document).ready(function($){
 	"use strict";
 	$('.video-bg-self-2').css('height','100vh');
-	
+
 });
 //Copyright Footer
 jQuery(document).ready(function($){

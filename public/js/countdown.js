@@ -1,13 +1,13 @@
 /* http://keith-wood.name/countdown.html
    Countdown for jQuery v1.6.3.
    Written by Keith Wood (kbwood{at}iinet.com.au) January 2008.
-   Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license. 
+   Available under the MIT (https://github.com/jquery/jquery/blob/master/MIT-LICENSE.txt) license.
    Please attribute the author if you use it. */
 
 /* Display a countdown timer.
-   Attach it with options like:
-   $('div selector').countdown(
-       {until: new Date(2009, 1 - 1, 1, 0, 0, 0), onExpiry: happyNewYear}); */
+   Attach it with options like:*/
+   // $('div selector').Countdown(
+   //     {until: new Date(2009, 1 - 1, 1, 0, 0, 0), onExpiry: new Date(2021,1,1)});
 
 (function($) { // Hide scope, no $ conflict
 
@@ -35,11 +35,13 @@ function Countdown() {
 		timezone: null, // The timezone (hours or minutes from GMT) for the target times,
 			// or null for client local
 		serverSync: null, // A function to retrieve the current server time for synchronisation
-		format: 'dHMS', // Format for display - upper case for always, lower case only if non-zero,
+		format: '' +
+            '' +
+            '', // Format for display - upper case for always, lower case only if non-zero,
 			// 'Y' years, 'O' months, 'W' weeks, 'D' days, 'H' hours, 'M' minutes, 'S' seconds
 		layout: '', // Build your own layout for the countdown
 		compact: false, // True to display in a compact format, false for an expanded one
-		significant: 00, // The number of periods with values to show, zero for all
+		significant: 0, // The number of periods with values to show, zero for all
 		description: '', // The description displayed for the countdown
 		expiryUrl: '', // A URL to load upon expiry, replacing the current page
 		expiryText: '', // Text to display upon expiry, replacing the countdown
@@ -116,7 +118,7 @@ $.extend(Countdown.prototype, {
 
 	/* List of currently active countdown targets. */
 	_timerTargets: [],
-	
+
 	/* Override the default settings for all instances of the countdown widget.
 	   @param  options  (object) the new settings to use as defaults */
 	setDefaults: function(options) {
@@ -313,7 +315,7 @@ $.extend(Countdown.prototype, {
 			}
 		}
 	},
-	
+
 	/* Calculate interal settings for an instance.
 	   @param  target  (element) the containing division
 	   @param  inst    (object) the current settings for this instance
@@ -400,7 +402,7 @@ $.extend(Countdown.prototype, {
 				inst[inst._since ? '_since' : '_until'] =
 					this._determineTime(sign + inst._periods[0] + 'y' +
 						sign + inst._periods[1] + 'o' + sign + inst._periods[2] + 'w' +
-						sign + inst._periods[3] + 'd' + sign + inst._periods[4] + 'h' + 
+						sign + inst._periods[3] + 'd' + sign + inst._periods[4] + 'h' +
 						sign + inst._periods[5] + 'm' + sign + inst._periods[6] + 's');
 				this._addTarget(target);
 			}
@@ -450,7 +452,7 @@ $.extend(Countdown.prototype, {
 					case 'd': day += parseInt(matches[1], 10); break;
 					case 'w': day += parseInt(matches[1], 10) * 7; break;
 					case 'o':
-						month += parseInt(matches[1], 10); 
+						month += parseInt(matches[1], 10);
 						day = Math.min(day, plugin._getDaysInMonth(year, month));
 						break;
 					case 'y':
@@ -535,8 +537,8 @@ $.extend(Countdown.prototype, {
 			inst.options.compact, inst.options.significant, showSignificant) :
 			((inst.options.compact ? // Compact version
 			'<span class="' + this._rowClass + ' ' + this._amountClass +
-			(inst._hold ? ' ' + this._holdingClass : '') + '">' + 
-			showCompact(Y) + showCompact(O) + showCompact(W) + showCompact(D) + 
+			(inst._hold ? ' ' + this._holdingClass : '') + '">' +
+			showCompact(Y) + showCompact(O) + showCompact(W) + showCompact(D) +
 			(show[H] ? this._minDigits(inst, inst._periods[H], 2) : '') +
 			(show[M] ? (show[H] ? inst.options.timeSeparator : '') +
 			this._minDigits(inst, inst._periods[M], 2) : '') +
@@ -661,7 +663,7 @@ $.extend(Countdown.prototype, {
 		show[S] = (format.match('s') ? '?' : (format.match('S') ? '!' : null));
 		return show;
 	},
-	
+
 	/* Calculate the requested periods between now and the target time.
 	   @param  inst         (object) the current settings for this instance
 	   @param  show         (string[7]) flags indicating which periods are requested/required

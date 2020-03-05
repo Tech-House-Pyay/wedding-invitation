@@ -8,7 +8,11 @@ use Intervention\Image\Facades\Image;
 
 class WeddingController extends Controller
 {
-    /**
+    public function __construct()
+    {
+//        $this->middleware('auth');
+    }
+        /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -142,6 +146,13 @@ class WeddingController extends Controller
 
             $wedding->update([
                 'bimage' => request()->bimage->store('uploads', 'public')
+            ]);
+
+        }
+        if (request()->has('engimage')){
+
+            $wedding->update([
+                'engimage' => request()->engimage->store('uploads', 'public')
             ]);
 
         }
