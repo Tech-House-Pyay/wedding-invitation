@@ -310,7 +310,7 @@ jQuery(document).ready(function($){
 		loop: true,
 		// poster: 'img/vidbg.jpg',
 		loadedCallback: function() {
-			$(this).videobackground('mute');
+			$(this).videobackground('on');
 		}
 	});
 });
